@@ -40,6 +40,9 @@ class _SplashScreenState extends State<SplashScreen> {
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
+    Future.delayed(const Duration(seconds: 2), () {
+      Navigator.pushReplacementNamed(context, Routes.dashboardScreen);
+    });
   }
 
   @override
