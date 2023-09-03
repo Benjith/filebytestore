@@ -15,13 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: AppConstants.appName,
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          useMaterial3: false,
-          primarySwatch: Colors.blue,
-        ),
-        onGenerateRoute: routeGenerator);
+      title: AppConstants.appName,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: false,
+        primarySwatch: Colors.blue,
+      ),
+      onGenerateRoute: routeGenerator,
+      navigatorKey: AppConstants.navigatorKey,
+    );
   }
 }
 
